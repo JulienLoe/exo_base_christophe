@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
@@ -12,6 +14,20 @@ public class Main {
             // Press Maj+F9 to start debugging your code. We have set one breakpoint
             // for you, but you can always add more by pressing Ctrl+F8.
             System.out.println("i = " + i);
+
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.println("Saisir a ?");
+            int a = scanner.nextInt();
+            System.out.println("Saisir b ?");
+            int b = scanner.nextInt();
+
+            System.out.println("Les valeurs sont : a =" + a +" et  b = " + b );
+            a = a + b;
+            b = a - b;
+            a = a - b;
+            System.out.println("Permutées les valeurs sont : a =" + a +" et  b = " + b );
+
         }
     }
 }
